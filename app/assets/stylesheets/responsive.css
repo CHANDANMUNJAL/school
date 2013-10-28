@@ -1,0 +1,43 @@
+/* For mac Mode */
+@media only screen and  (min-width: 959px) and (max-width: 1920px) {
+}
+
+
+/* For iPad Portrait Mode */
+@media only screen and (min-width: 768px) and (max-width: 958px) {
+	#footer{padding-left:20px;}
+}
+
+/* For iPad Landscape Mode */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+	.logo_home{margin-top:30px;}
+	.main_rollover{margin-top:30px;}
+	#footer{padding-left:20px; padding-right:20px;}
+	.rollover_img{width:140px; height:140px;}
+	.rollover_img a{width:140px; height:140px;}
+	.main_rollover{width:90%;}
+	
+}
+
+/* For iPhone Portrait Mode */
+@media only screen and (max-width: 599px) {
+	.logo_home{width:260px; margin-top:30px;}
+	.blackbg{width:240px;}
+	#searchneighborh{width:146px;}
+	.main_rollover{width:240px; margin-top:30px;}
+	.first_img{margin-left:45px;}
+	.first_img p{text-align:center;}
+	#footer{padding-left:20px; padding-right:20px;}
+	
+}
+
+/* For iPhone Landscape Mode */
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+	.logo_home{width:340px;}
+	.blackbg{width:310px;}	
+	#searchneighborh{width:216px;}	
+	.main_rollover{width:430px;}
+	.rollover_img{width:140px; height:140px;}
+	.rollover_img a{width:140px; height:140px;}
+	#footer{padding-left:20px; padding-right:20px;}
+}

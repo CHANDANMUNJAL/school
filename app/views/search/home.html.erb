@@ -1,0 +1,188 @@
+<html>
+<body> 
+<div class="topbar">
+	<!-- start container -->
+    <div class="container">
+    	<ul>
+        	<li><strong><%= link_to 'Login', '#' %></strong></li>
+            <li><strong><%= link_to 'Register', '#' %></strong></li>
+        </ul>
+    	
+    </div>
+    <!-- end container -->
+</div>
+<!-- end topbar -->
+
+<!-- start header -->
+<div id="header_home">
+	<!-- start container -->
+    <div class="container">
+    	<!-- start logo -->
+        <div class="logo_home">
+        	<%= link_to image_tag("/assets/logo.png") %>
+        </div>
+        <!-- end logo -->
+    </div>
+    <!-- end container -->
+</div>
+<!-- end header -->
+
+
+<!-- start container -->
+<div class="container">
+    <div class="blackbg">
+      <%= form_tag :controller => 'search', :action => 'show', :method => 'post' do %>
+        <p>
+          <%= text_field_tag :search, params[:search], :class => "acInput", :id => "searchneighborh", :placeholder => 'City, School', :name => "search" %>
+          <%= submit_tag "Search", :class => "btn_purple_simple orderme" %>
+        </p>
+      <% end %>
+    </div>
+    <div class="main_rollover">
+      <div class="first_img">
+         <!-- start rollover_img -->
+        <div class="rollover_img" style="background:url(assets/play_school.jpg) no-repeat;">
+          <a href="#">
+                <span><br />Click Here to<br /> Search for PlaySchools <br />in Your City.   </span>
+          </a>
+        </div>
+         <!-- end rollover_img -->
+         <p><%= link_to 'Play Schools in your City', '#' %></p>	
+     </div>
+     
+     <div class="first_img">
+         <!-- start rollover_img -->
+         <div class="rollover_img" style="background:url(assets/img_books.png) no-repeat;">
+            <a href="#">
+                <span><br />Click Here to<br /> Search for Schools <br />in Your City.   </span>
+            </a>
+         </div>
+         <!-- end rollover_img -->
+         <p><%= link_to 'Schools in your City', '#' %></p>
+     </div>
+     
+     <div class="first_img">
+         <!-- start rollover_img -->
+         <div class="rollover_img" style="background:url(assets/img_creche.png) no-repeat;">
+            <a href="#">
+                <span><br />Click Here to<br /> Search for creches <br />in Your City.   </span>
+            </a>
+         </div>
+         <!-- end rollover_img -->
+          <p><%= link_to 'Creches in your City', '#' %></p>
+     </div>
+     
+     </div>
+</div>
+<!-- end container -->    
+
+
+<!-- start footer -->
+<div id="footer">
+	<!-- start container -->
+    <div class="container">
+    	<h4>Find the great schools in your area</h4>
+        <ul class="bottom_list">
+        	<h5>Schools in Haryana</h5>
+        	<li><%= link_to 'Ambala', '#' %></li>
+            <li><%= link_to 'Bahadurgarh', '#'%></li>
+            <li><%= link_to 'Bhiwani', '#' %></li>
+            <li><%= link_to 'Faridabad', '#' %></li>
+            <li><%= link_to 'Gurgaon', '#' %></li>
+            <li><%= link_to 'Hisar','#' %></li>
+            <li><%= link_to 'Jhajjar', '#' %></li>
+            <li><%= link_to 'Karnal', '#' %></li>
+            <li><%= link_to 'Kurukshetra', '#' %></li>
+            <li><%= link_to 'Palwal', '#' %></li>
+            <li><%= link_to 'Panipat', '#' %></li>
+            <li><%= link_to 'Rewari', '#' %></li>
+            <li><%= link_to 'Rohtak', '#' %></li>
+        </ul>
+        <ul class="bottom_list">
+        	<h5>Schools in Punjab</h5>
+        	<li><%= link_to 'Amritsar', '#' %></li>
+            <li><%= link_to 'Bhatinda', '#' %></li>
+            <li><%= link_to 'Dina Nagar', '#' %></li>
+            <li><%= link_to 'Faridkot', '#' %></li>
+            <li><%= link_to 'Ferozpur', '#' %></li>
+            <li><%= link_to 'Gurdaspur', '#' %></li>
+            <li><%= link_to 'Hoshiarpur', '#' %></li>
+            <li><%= link_to 'Jallandhar', '#' %></li>
+            <li><%= link_to 'Kapurthala', '#' %></li>
+            <li><%= link_to 'Khanna', '#' %></li>
+            <li><%= link_to 'Ludhiana', '#' %></li>
+            <li><%= link_to 'Moga', '#' %></li>
+            <li><%= link_to 'Mohali', '#' %></li>
+        </ul>
+        <ul class="bottom_list">
+        	<h5>Schools in Maharashtra</h5>
+        	<li><%= link_to 'Ahmednagar', '#' %></li>
+            <li><%= link_to 'Akola', '#' %></li>
+            <li><%= link_to 'Amravati', '#' %></li>
+            <li><%= link_to 'Aurangabad', '#' %></li>
+            <li><%= link_to 'Baramati', '#' %></li>
+            <li><%= link_to 'Beed', '#' %></li>
+            <li><%= link_to 'Bhandara', '#' %></li>
+            <li><%= link_to 'Bhusawal', '#' %></li>
+            <li><%= link_to 'Chalisgaon', '#' %></li>
+            <li><%= link_to 'Chandrapur', '#' %></li>
+            <li><%= link_to 'Chiplun', '#' %></li>
+            <li><%= link_to 'Dhule', '#' %></li>
+            <li><%= link_to 'Gondia', '#' %></li>
+        </ul>
+        <ul class="bottom_list">
+        	<h5>Schools in Madhya Pradesh</h5>
+        	<li><%= link_to 'Ashok Nagar', '#'%></li>
+            <li><%= link_to 'Bhind', '#' %></li>
+            <li><%= link_to 'Bhopal', '#' %></li>
+            <li><%= link_to 'Chattarpur', '#' %></li>
+            <li><%= link_to 'Chhindwara', '#' %></li>
+            <li><%= link_to 'Dabra', '#' %></li>
+            <li><%= link_to 'Datia', '#' %></li>
+            <li><%= link_to 'Guna', '#' %></li>
+            <li><%= link_to 'Gwalior', '#' %></li>
+            <li><%= link_to 'Harda', '#' %></li>
+            <li><%= link_to 'Hoshangabad', '#' %></li>
+            <li><%= link_to 'Indore', '#' %></li>
+            <li><%= link_to 'Jabalpur', '#' %></li>
+        </ul>
+        <ul class="bottom_list">
+        	<h5>Schools in Uttar Pradesh</h5>        	
+        	<li><%= link_to 'Agra', '#' %></li>
+            <li><%= link_to 'Aligarh', '#' %></li>
+            <li><%= link_to 'Allahabad', '#'%></li>
+            <li><%= link_to 'Azamgarh', '#' %></li>
+            <li><%= link_to 'Baghpat', '#' %></li>
+            <li><%= link_to 'Banda', '#' %></li>
+            <li><%= link_to 'Bareilly', '#' %></li>
+            <li><%= link_to 'Basti', '#' %></li>
+            <li><%= link_to 'Bijnor', '#' %></li>
+            <li><%= link_to 'Bulandsahar', '#' %></li>
+            <li><%= link_to 'Chandausi', '#' %></li>
+            <li><%= link_to 'Deoband', '#' %></li>
+            <li><%= link_to 'Deoria', '#' %></li>
+        </ul>
+        <ul class="bottom_list">
+        	<h5>Schools in Rajasthan</h5>
+        	<li><%= link_to 'Ajmer', '#' %></li>
+            <li><%= link_to 'Alwar', '#' %></li>
+            <li><%= link_to 'Bandikui', '#' %></li>
+            <li><%= link_to 'Baran', '#' %></li>
+            <li><%= link_to 'Beawar', '#' %></li>
+            <li><%= link_to 'Bharatpur', '#' %></li>
+            <li><%= link_to 'Bhilwara', '#' %></li>
+            <li><%= link_to 'Bikaner', '#' %></li>
+            <li><%= link_to 'Churu', '#' %></li>
+            <li><%= link_to 'Dholpur', '#' %></li>
+            <li><%= link_to 'Gangapur city', '#' %></li>
+            <li><%= link_to 'Hindaun', '#' %></li>
+            <li><%= link_to 'Jaipur', '#' %></li>
+        </ul>
+        <div class="copyright">
+        	<p>&copy;2013 All Rights Reserved</p>
+        </div>
+    </div>
+    <!-- end container -->
+</div>
+<!-- end footer -->
+</body></html>

@@ -1,0 +1,21 @@
+<table border='1'>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Website</th>
+    <th>City</th>
+    <th>State</th>
+  </tr> 
+
+  <% @schools.each do |school| %>
+    <tr>	
+      <td><%= school.name %></td>
+      <td><%= school.address %></td>
+      <td><%= school.phone %></td>
+      <td><%= school.website %></td>
+      <td><%= school.city %></td>
+      <td><%= school.state %></td>
+    </tr>  
+  <%end%>
+</table>  

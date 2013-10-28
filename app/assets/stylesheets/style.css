@@ -1,0 +1,417 @@
+/*  
+CSS definations for displa.io
+*/
+/*-------------------------------------------------------------------------------------------
+
+INDEX:
+
+0. RESET
+
+1. SETUP
+-1.1 Defaults
+-1.2 Common Tages
+
+2. SITE STRUCTURE & APPEARANCE
+-2.1 Header
+-2.2 navigation
+-2.3 container
+  -2.3.1 leftcol
+  -2.3.2 rightcol
+-2.4 footer
+
+-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/* 0. RESET */
+/*-------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	outline:none;
+}
+/* ---------------- common tags --------------------- */
+h1, h2, h3, h4, h5, h6, strong {
+	font-weight:bold;
+}
+i, em {
+	font-style:italic;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.alignleft {
+	text-align:left;
+}
+.alignright {
+	text-align:right;
+}
+.aligncenter {
+	text-align:center;
+}
+.clear {
+	clear:both;
+	line-height:1px;
+	height:1px;
+}
+textarea {
+	overflow:auto;
+	font-family:Arial, Helvetica, sans-serif; /* Body Font Family Will Come Here */
+}
+a {
+	color:#333;
+	text-decoration:none;
+}
+a:hover {
+	color:#000;
+}
+/* ---------------- layout tags --------------------- */
+
+body {
+	background:url(../images/patren.png) repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.topbar{
+	background:#fff;
+	height:50px;
+	border-bottom:solid 1px #ccc;
+}
+.topbar ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	float:right;
+}
+.topbar ul li{
+	float:left;
+	font-size:15px;
+	line-height:50px;
+	padding:0 10px;
+	border-left:1px solid #efeeee;
+}
+.topbar ul li.first, .topbar ul li:first-child{
+	border:none;
+}
+.topbar ul li a{
+	text-decoration:none;
+	color:#807b75;
+}
+.topbar ul li a:hover{
+	color:#a09f9d;
+}
+#header_home{
+	width:100%;
+}
+.logo_home{
+	width:533px;
+	margin:0 auto;
+	margin-top:150px;
+	margin-bottom:10px;
+	font-family: 'Oswald', sans-serif;
+}
+.logo_home a{	
+	color:#a97b50;
+	font-size:45px;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-decoration:none !important;
+}
+.logo_home a span{
+	color:#603813;
+}
+.logo_home a:hover{
+	color:#a97b50;
+}
+.content{
+	width:100%;
+	float:left;
+	background:#fff;
+	margin:20px 0 0 0;
+}
+.blackbg{
+	background:#555;
+	padding:15px;
+	width:500px;
+	margin:0 auto;
+	opacity:0.8;
+}
+#searchneighborh {
+	padding: 10px 10px 10px 15px;
+	width: 404px;
+	font-size: 16px;
+	border-radius:0px;
+	border:none;
+	margin:0px;
+}
+.btn_purple_simple{
+	background:#000;
+	border:none;
+	padding:11px 12px;
+	color:#fff;
+	margin:0px 0 0 0;
+	font-family: 'Oswald', sans-serif;
+}
+.category_list{
+	width:520px;
+	margin:0 auto;
+	margin-top:170px;
+}
+.category_list ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.category_list ul li{
+	float:left;
+	margin:0 20px 0 0;
+	border:solid 5px #fff;
+}
+.rollover_img{
+	width:150px;
+	height:150px;
+	float:left;
+	border-radius:10px;
+	-webkit-border-radius:10px;	
+	-moz-border-radius:10px;
+	margin:0 10px 10px 0;
+	border:solid 5px #a97b50;
+}
+.rollover_img a{
+	width:150px;
+	height:150px;
+	display:block;
+	color:#fff;
+	text-decoration:none !important;
+}
+.rollover_img a span{
+	display:none;
+	width: 140px;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	color:#fff;
+}
+.rollover_img a:hover{
+	background:#000;
+	opacity:0.8;
+}
+.rollover_img a:hover span{
+	display:block;
+}
+.main_rollover{
+	width:510px;
+	margin:0 auto;
+	margin-top:100px;
+}
+.first_img{ float:left;}
+.first_img p{font-size:12px;}
+.first_img p a{text-decoration:none;}
+#footer{
+	background:#333;
+	margin:80px 0 0 0;
+	padding:20px 0 20px 0;
+}
+#footer h4{
+	font-size:14px;
+	color:#fff;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+#footer h5{
+	font-size:12px;
+	color:#fff;
+	font-weight:normal;
+	text-decoration:underline;
+	margin-bottom: 10px;
+}
+#footer ul.bottom_list{
+	width:155px;
+	float:left;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+#footer ul.bottom_list li{
+	margin:0px;
+	font-size:13px;
+}
+#footer ul.bottom_list li a{
+	color:#777 !Important;
+}
+.copyright{
+	width:100%;
+	border-top:solid 1px #444;
+	padding:15px 0 0 0;
+	float:left;
+	margin:15px 0 0 0;
+}
+.copyright p{
+	text-align:center;
+	color:#777;
+	font-size:12px;
+}
+
+/* Result Page */
+
+#header{
+	height:60px;
+	background:#fff;
+	border-bottom:solid 1px #ccc;
+}
+.logo{
+	float:left;
+	width:250px;
+	margin:16px 0 0 0;
+}
+#topnav_search{
+	width:260px;
+	margin:18px 0 0 0;
+}
+.topnav_search_container{
+	float:right;
+}
+.unit{
+	float:left;
+}
+.line, .lastUnit{
+	overflow:hidden;
+}
+#topnav_search fieldset input {
+	width: 232px;
+	height: 26px;
+	outline: 0;
+	border: 0;
+	color: #2b2b2b;
+}
+.bottom {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.make-cccccc {
+	color: #ccc;
+}
+.lastUnit {
+	float: none;
+	width: auto;
+	_position: relative;
+	_left: -3px;
+	_margin-right: -3px;
+}
+.iconx32g {
+	display: inline-block;
+	background:url(../images/search_sprite.png) no-repeat left top;
+	width: 25px;
+	height: 25px;
+	border:none;
+	margin:3px 0 0 3px !important;
+}
+#topnav_search .showSchoolArticle {
+	background-color: #e6e6e6;
+	color: #2b2b2b;
+	height: 20px;
+	width: auto;
+	border-right: 1px solid #b8b8b8;
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+	padding: 4px 10px;
+	cursor: pointer;
+}
+.leftcol{
+	width:680px;
+	float:left;
+	padding:20px 0 0 20px;
+}
+.map{
+}
+.result h3{
+	font-size:18px;
+	color:#333;	
+}
+.result ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.result ul li{
+	width:100%;
+	float:left;
+	margin-bottom:10px;
+}
+.result ul li .count{
+	font-size:16px;
+	background:#888;
+	color:#fff;
+	font-weight:bold;
+	float:left;
+	padding:2px 5px;
+	margin:0 10px 100px 0;
+}
+.result ul li .name{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.result ul li .address{
+	width:250px;
+	font-size:12px;
+	margin-bottom:5px;
+}
+.result ul li .phone{
+	font-size:12px;
+	margin-bottom:5px;
+}
+.result ul li .phone span{
+	color:#C00;
+}
+.result ul li .web{
+	font-size:12px;
+	margin-bottom:5px;
+}
+.result ul li .web span{
+	color:#C00;
+}
+.result ul li .leftcolumn{
+	width:270px;
+	float:left;
+}
+.result ul li .rightcolumn{
+	width:300px;
+	float:left;
+}
